@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Records from "./Records";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 
 const Profile = () => {
   return (
@@ -11,7 +13,12 @@ const Profile = () => {
       </div>
 
       <div className="xl:flex  xl:justify-around ">
-        <div className="xl:w-3/5  ">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="xl:w-3/5  "
+        >
           <Image
             src="/Profile.jpg"
             layout="responsive"
@@ -19,17 +26,27 @@ const Profile = () => {
             height={270}
             alt="Profile"
           />
-        </div>
-        <div className="flex flex-col justify-center items-center m-4">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="flex flex-col justify-center items-center m-4"
+        >
           <h2 className="text-2xl">Rngrang Hungul</h2>
           <p className="flex justify-center items-center m-4 text-base">
             余欣蘭
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className=" xl:flex text-sm leading-8 xl:m-8 ">
-        <div className="xl:w-4/6 m-8">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="xl:w-4/6 m-8"
+        >
           <p>
             余欣蘭，1987年生，花蓮銅門部落太魯閣族，族語名字為Rngrang．Hungul，畢業於國立東華大學民族語言與傳播學系。創作以長期地田野影像為基礎，關注族群在當代所面臨的議題為出發，擅長從女性的視角出發，將部落中的日常處境與親密的個人經驗轉化為創作元素，以此辯證出個體在當代社會中重新連接傳統文化的定位與方法。
             <br></br>
@@ -53,9 +70,14 @@ const Profile = () => {
             Dowmung, Connecting with Dowmung”, “Woman the Hunter”, “The Woman
             Carrying the Prey” , ”Mountain Keepers”.
           </p>
-        </div>
+        </motion.div>
 
-        <div className=" flex flex-col   xl:w-1/2 p-8">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className=" flex flex-col   xl:w-1/2 p-8"
+        >
           <h2 className="flex flex-col justify-center items-center font-bold ">
             展覽與獎項
           </h2>
@@ -66,7 +88,7 @@ const Profile = () => {
           <div>
             <Records />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

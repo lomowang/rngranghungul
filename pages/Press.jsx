@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 import React from "react";
 
 const Press = () => {
@@ -9,7 +11,13 @@ const Press = () => {
         <h2 className="text-2xl font-bold">文章評論</h2>
         <p className="tex-sm">Press</p>
       </div>
-      <div className="m-4">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="m-4"
+      >
         <Image
           src="/Verse.jpg"
           width={280}
@@ -25,7 +33,7 @@ const Press = () => {
           VERSE Issue 19 <br></br>2023/10/10
         </p>
         <Link href="/">閱讀更多</Link>
-      </div>
+      </motion.div>
     </section>
   );
 };

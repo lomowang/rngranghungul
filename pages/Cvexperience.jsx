@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 
 const indWorks = [
   {
@@ -162,7 +164,13 @@ const exhibitions = [
 const Cvexperience = ({ item }) => {
   return (
     <section className="xl:flex leading-4">
-      <div className="xl:w-4/5 xl:m-4 py-8">
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-4/5 xl:m-4 py-8"
+      >
         <h2 className="font-bold text-sm">◎獨立製作作品</h2>
         <p className="text-xs">Independent production works</p>
         {indWorks.map((item, index) => {
@@ -176,9 +184,15 @@ const Cvexperience = ({ item }) => {
             </ul>
           );
         })}
-      </div>
+      </motion.div>
 
-      <div className="xl:w-4/5 xl:m-4 py-8">
+      <motion.div
+        variants={fadeIn("left", 0.8)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-4/5 xl:m-4 py-8"
+      >
         <h2 className="font-bold text-sm">◎展覽與獎項</h2>
         <p className="text-xs">Awards and Publication Records</p>
         {exhibitions.map((item, index) => {
@@ -194,7 +208,7 @@ const Cvexperience = ({ item }) => {
             </section>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };

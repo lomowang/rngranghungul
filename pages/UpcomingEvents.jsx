@@ -1,18 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 
 const UpcomingEvents = () => {
   return (
     <div className="flex flex-col justify-center items-center leading-8 ">
       <h2 className="text-base leading-8 font-bold ">近期活動</h2>
       <h2 className="text-sm">Upcoming Events</h2>
-      <p className="xl:w-1/2  w-3/4 m-4 ">
+      <motion.p
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-1/2  w-3/4 m-4 "
+      >
         本屆藝術節集結三檔展覽——「情山色海：酷兒．原民．秘密史」、「複眼觀：消失與定格的肖像」、「Misakorengay製陶的人—採集即為創作的開始」，及主題限定「美食花開×手藝花開系列活動」，並規劃藝術家講座、工作坊、專家導覽等豐富活動，自2023年9月1日至12月3日，呈現原住民族創作者透過藝術實踐激發出來的酷異（Queer）性別觀點、以原住民族自身出發論述原住民族攝影及兒童美感教育連結在地媒材的創作成果，共同展現多元原住民當代藝術風貌。
-      </p>
+      </motion.p>
 
       {/* pulima */}
-      <div className="xl:w-1/2 w-full px-4 py-4 m-4">
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-1/2 w-full px-4 py-4 m-4"
+      >
         <div>
           <h2 className="flex justify-center items-center font-bold bg-slate-200">
             Palalan – 2023 Pulima藝術節
@@ -39,10 +53,16 @@ const UpcomingEvents = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
       {/* compoundeyeview */}
-      <div className="xl:w-1/2 w-full px-4 py-4 m-4">
+      <motion.div
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-1/2 w-full px-4 py-4 m-4"
+      >
         <div>
           <h2 className="flex justify-center items-center font-bold bg-slate-200">
             複眼觀：消失與定格的肖像
@@ -77,9 +97,15 @@ const UpcomingEvents = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="xl:w-1/2  m-4 px-4">
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0 }}
+        className="xl:w-1/2  m-4 px-4"
+      >
         <h2 className="font-bold  bg-gray-200 p-4">
           策展理念 <br></br>策展人 田名璋
         </h2>
@@ -98,7 +124,7 @@ const UpcomingEvents = () => {
           <br></br>
           「複眼觀」的策展取自「觀看」原住民族多元視角的切片，在影像爆炸的時代裡更弔詭的被導向為聯合豐年祭、肖像擺拍、文物陳列，於是我們試辦「原住民家族照相簿」的徵件，期待看見族人所珍藏的老照片裡的記憶，無論照片背後的故事是歡笑或悲情，原住民族正摩拳擦掌以影像參與製造世界。
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
