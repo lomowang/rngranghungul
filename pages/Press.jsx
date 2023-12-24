@@ -29,10 +29,15 @@ const Press = () => {
         <h2 className="py-4">
           與動物共同生活的狩獵者—重新看見原住民族狩獵文化
         </h2>
-        <p className=" text-sm">
+        <p className=" text-sm leading-6">
           VERSE Issue 19 <br></br>2023/10/10
         </p>
-        <Link href="/">閱讀更多</Link>
+        <Link
+          href="https://www.verse.com.tw/article/rngrang-hungul"
+          className="bg-green-400"
+        >
+          閱讀更多
+        </Link>
       </motion.div>
     </section>
   );

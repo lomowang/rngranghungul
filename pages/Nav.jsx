@@ -1,39 +1,3 @@
-// import Link from "next/link";
-
-// const Nav = () => {
-//   return (
-//     <nav>
-//       <ul className="flex gap-4">
-//         <Link href={"/UpcomingEvents"}>
-//           <h2>近期活動</h2>
-//           <p>Upcoming Events</p>
-//         </Link>
-//         <Link href={"/Press"}>
-//           <h2>近期活動</h2>
-//           <p>Upcoming Events</p>
-//         </Link>
-//         <Link href={"/Profile"}>
-//           <h2>近期活動</h2>
-//           <p>Upcoming Events</p>
-//         </Link>
-//         <Link href={"/Profile"}>
-//           <h2>近期活動</h2>
-//           <p>Upcoming Events</p>
-//         </Link>
-//         <Link href="/Profile">
-//           <h2>近期活動</h2>
-//           <p>Upcoming Events</p>
-//         </Link>
-//       </ul>
-//       <div>
-//         <Link href={"/"}>tessttt</Link>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Nav;
-
 "use client";
 import Link from "next/link";
 
@@ -88,7 +52,7 @@ const Nav = ({ containerStyles, listStyles }) => {
       <ul className={`${listStyles}`}>
         {links.map((link) => {
           return (
-            <li>
+            <li className="hover:underline  ">
               <Link key={link.id} href={link.url}>
                 {link.title}
                 <p>{link.text}</p>

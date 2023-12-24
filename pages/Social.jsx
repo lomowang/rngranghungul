@@ -5,12 +5,12 @@ const Social = ({ containerStyles }) => {
   return (
     <ul className={`${containerStyles}`}>
       <li>
-        <Link href="https://www.facebook.com">
-          {" "}
-          {/* 在這裡設定正確的 Facebook 頁面 URL */}
-          <a>
-            <Facebook />
-          </a>
+        <Link href="https://www.facebook.com/rainbowandlois">
+          <Facebook
+            size={30}
+            color="#FFFFFF"
+            className="bg-blue-600  rounded-xl"
+          />
         </Link>
       </li>
     </ul>

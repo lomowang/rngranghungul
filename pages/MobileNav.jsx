@@ -13,8 +13,8 @@ const MobileNav = () => {
       <SheetContent side="left">
         <div className="flex flex-col justify-around h-full p-4">
           <Nav
-            containerStyles="text-black"
-            listStyles="flex flex-col gap-y-2 text-xl "
+            containerStyles="text-black "
+            listStyles="flex flex-col gap-y-2 text-sm leading-6 mt-4  "
           />
           <div>
             <Social />

@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
+
 const Contact = () => {
   return (
     <section className="py-8">
@@ -7,7 +10,13 @@ const Contact = () => {
       </div>
       <div className="max-w-4xl mx-auto px-4 md:px-8 bg-gray-50">
         <div className="md:flex md:justify-around md:items-start text-justify">
-          <div className="md:w-1/2 mb-8 m-8 ">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="md:w-1/2 mb-8 m-8 "
+          >
             <h2 className="text-xl font-bold">山貳六影像工作室</h2>
             <h3 className="text-lg">Mount Two-Six Studio</h3>
             <p className="my-4 text-sm">
@@ -18,9 +27,15 @@ const Contact = () => {
               mountain: it is a mountain, it is not a mountain, and yet it is a
               mountain again...
             </p>
-          </div>
+          </motion.div>
 
-          <div className="md:w-1/2 mb-8 m-8 text-sm">
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="md:w-1/2 mb-8 m-8 text-sm"
+          >
             <p className="mt-8">Rngrang．Hungul</p>
             <p className="mt-2">
               歡迎大家邀她到世界各地放映她的作品或演講。
@@ -36,7 +51,7 @@ const Contact = () => {
                 rainbowandlois@gmail.com
               </a>
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
