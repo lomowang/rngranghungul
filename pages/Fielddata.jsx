@@ -18,13 +18,13 @@ const fielddata = [
     name: "田野筆記2022",
     secname: "Field Notes 2022",
     title: "媽媽—Heydi Mijung",
-    text: "你（山羊）真的活該 我已經逮到你了。你把我的山蘇都偷吃完了 現在該我要吃你（山羊），我的孩子們都會高興 全家人也會很開心，終於有山羊肉可以吃 這樣才是真的我是一個女人 我是真正的女人，我揹了獵物回來 聽我喊吧，聽我呼喊吧 我在呼叫一家人，孩子啊 我的孩子們都過來看吧，都過來吃 這是媽媽帶回來的獵物，我就像男人一樣強壯勇敢 我們一起來歡樂吧",
+    text: "你真的活該 我已經逮到你了。你把我的山蘇都偷吃完了 現在該我要吃你，我的孩子們都會高興 全家人也會很開心，終於有肉可以吃 這樣才是真的我是一個女人 我是真正的女人，我揹了獵物回來 聽我喊吧，聽我呼喊吧 我在呼叫一家人，孩子啊 我的孩子們都過來看吧，都過來吃 這是媽媽帶回來的獵物，我就像男人一樣強壯勇敢 我們一起來歡樂吧",
     enname: "Mother-Heydi Mijung",
     entext:
       "You (the goat) deserve it, I’ve got you.You’ve stolen all my ferns and now it’s my turn to eat you.My children will be happy, my whole family will be happy.A piece of goat meat at last. That’s what it’s all about.I’m a woman. I’m a real woman.I’ve come back with the prey on my back. Hear my call.Hear me as I call out. I’m calling the family.Children, my children, come and see.Come and eat. This is the prey that mommy brought back.I’m as strong and brave as a man. Let’s enjoy it together.",
     image: "/HeydiMijung.png",
     audio: "/mp3/SobayMonaSong2.m4a",
-    sectext: "揹山羊之歌–Goat Carrying Song.",
+    sectext: "揹動物之歌–The Song of Carrying Animals.",
   },
 ];
 
