@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import Link from "next/link";
 
 const work = [
   {
@@ -12,6 +13,7 @@ const work = [
     text: "2023-2024 Duck Eggs and Gaya – The Calling",
     info: "Taiwan｜2023-2024 | continued",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/workpage/Duck",
   },
   {
     Image: "/TheWomanCarryingthePrey.jpg",
@@ -20,6 +22,7 @@ const work = [
     text: "The Woman Carrying the Prey",
     info: "Taiwan｜2023-2024 | continued",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/UpcomingEvents",
   },
   {
     Image: "/MountainKeepers.jpg",
@@ -28,6 +31,7 @@ const work = [
     text: "Mountain Keepers",
     info: "Taiwan｜2023-2024 | continued",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/UpcomingEvents",
   },
   {
     Image: "/Edition.jpg",
@@ -37,6 +41,7 @@ const work = [
     textEng: "I’m a Woman, and Also a Hunter.: The Director’s Edition.",
     info: "Taiwan｜2022｜FHD｜Colour｜20min｜",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/UpcomingEvents",
   },
   {
     Image: "/Videowork.png",
@@ -46,6 +51,7 @@ const work = [
     textEng: "I’m a Woman, and Also a Hunter:Video work",
     info: "Taiwan｜2022｜FHD｜Colour｜17min｜",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/UpcomingEvents",
   },
 
   {
@@ -55,6 +61,7 @@ const work = [
     text: "Mgaluk Dowmung, the documentary about the Tongmen family",
     info: "Taiwan｜2020｜FHD｜Colour｜63min｜",
     language: "Truku、Chinese｜CH&EN subtitles",
+    url: "/UpcomingEvents",
   },
   {
     Image: "/Dream.jpg",
@@ -62,6 +69,7 @@ const work = [
     title: "夢系列——肉",
     text: "The Dream Series-Flesh",
     info: "Taiwan｜2011｜DV｜Colour｜8分50秒｜無聲｜單頻道錄像 Single channel video",
+    url: "/UpcomingEvents",
   },
 ];
 
@@ -95,7 +103,10 @@ const Project = () => {
             <h3 className="font-bold text-sm leading-8">{video.textEng}</h3>
             <p className="text-base leading-8">{video.info}</p>
             <p className="text-sm leading-8">{video.language}</p>
-            <a className="font-bold leading-8">作品介紹Works</a>
+            <p>
+              <Link href={video.url}>作品介紹Works</Link>
+            </p>
+            <a className="font-bold leading-8"></a>
           </motion.div>
         </div>
       ))}

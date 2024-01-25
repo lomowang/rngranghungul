@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import Workswiper from "./Workswiper";
 
 const Works = () => {
   return (

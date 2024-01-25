@@ -48,7 +48,7 @@ const links = [
 
 const Nav = ({ containerStyles, listStyles }) => {
   return (
-    <nav className={`${containerStyles}`}>
+    <nav className={`${containerStyles} p-4`}>
       <ul className={`${listStyles}`}>
         {links.map((link) => {
           return (
