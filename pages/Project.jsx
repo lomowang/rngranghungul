@@ -55,7 +55,7 @@ const work = [
   },
 
   {
-    Image: "/MgalukDowmung.jpg",
+    Image: "/MgalukDowmung.JPG",
     neme: "MgalukDowmung",
     title: "Mgaluk Dowmung正在連結銅門—銅門部落家族故事影像紀錄",
     text: "Mgaluk Dowmung, the documentary about the Tongmen family",
