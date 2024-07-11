@@ -67,16 +67,6 @@ const Duck = () => {
           <Image src="/duckgaya.jpg" width={400} height={600} />
           <h2>主視覺海報 Visual Design</h2>
         </div>
-
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ex4JSchgA9A"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          onContextMenu={(e) => e.preventDefault()} // 禁用右鍵菜單
-        ></iframe>
       </div>
     </section>
   );
